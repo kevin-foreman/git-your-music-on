@@ -21,7 +21,7 @@ pool.query(`DROP TABLE IF EXISTS albums; CREATE TABLE albums (
 pool.query(`DROP TABLE IF EXISTS artists; CREATE TABLE artists (
     id serial PRIMARY KEY,
     name varchar(60),
-    FOREIGN KEY (artist_id)
+    FOREIGN KEY (album_id)
     REFERENCES albums(id)
 )`, (err) => {
     if (err) {

@@ -4,6 +4,7 @@ config();
 import cors from 'cors';
 import express, { json } from 'express';
 const app = express();
+const port = process.env.port || 8001;
 // const colors = require('colors/safe');
 import { getPool } from './dbConn';
 const pool = getPool();
@@ -41,3 +42,9 @@ app.use((error, req, res, next) => {
 });
 
 // add app.listen for the port
+app.use(cors({ origin: '*' }));
+
+app.listen(port, () => {
+    console.log(`Listening on port ${port}`);
+    // console.log('Connecting to postgres pool: ', pool);
+});

@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Small application to find music.",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "jest",
     "migrate": "npm run migrations.js",

@@ -5,8 +5,8 @@ const url = 'https://genius-song-lyrics1.p.rapidapi.com/search/?q=weeknd&per_pag
 const options = {
   method: 'GET',
   headers: {
-    'X-RapidAPI-Key': 'bee8030221msh246af6cee12d499p1da561jsn06a1e5d81d0e',
-    'X-RapidAPI-Host': 'genius-song-lyrics1.p.rapidapi.com'
+    'X-RapidAPI-Key': DOTENV_API_KEY,
+    'X-RapidAPI-Host': DOTENV_HOST_NAME
   }
 };
 

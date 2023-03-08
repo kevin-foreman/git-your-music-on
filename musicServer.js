@@ -39,3 +39,5 @@ app.use((error, req, res, next) => {
         }
     });
 });
+
+// add app.listen for the port
